@@ -1,0 +1,88 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+body{
+    background-color: #f3edd5;
+}
+.header{
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    height: 100px;
+    background-color: #dfd6ad;
+    color: #fff;
+    font-size: 2rem;
+    padding: 3rem;
+}
+.togbut{
+    background-color: grey;
+    color:#000;
+    border-radius: 1.5rem;
+    padding: 5px;
+    cursor: pointer;
+    height: 4.5rem;
+    width: 12rem;
+    font-size: 1.5rem;
+    color: #fff;
+    font-weight: 500;
+    border: rgba(97, 58, 32, 0.986) 3px solid;
+    
+}
+.windiv{
+    font-size: 3rem;
+}
+.Winner{
+    background-color: #dfd6ad;
+    color: white;
+    font-size: 3rem;
+    padding: 1rem;
+    border: none;
+}
+.reset{
+    background-color: rgb(206, 164, 123);
+    border: black 3px solid;
+    color:#000;
+    border-radius: 1.5rem;
+    padding: 5px;
+    cursor: pointer;
+    height: 4.5rem;
+    width: 15rem;
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: #fff;
+}
+.hero{
+    display: flex;
+    width:100vw;
+    align-items: center;
+    padding-top: 5%;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    height: 600px;
+    width: 600px;
+}
+.box{
+    display: flex;
+    width: 200px;
+    height: 200px;
+    border: 2px solid #000;
+    justify-content: center;
+    font-size: 10rem;
+    align-items: center;
+
+}
+.players{
+    width:600px;
+    height: 600px;
+    align-content: center;
+    padding-left: 10%;
+    font-size: 50px;
+
+}
