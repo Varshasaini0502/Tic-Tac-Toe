@@ -6,114 +6,128 @@
   <title>Tic Tac Toe</title>
   <style>
     *{
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-      font-family: Verdana, Geneva, Tahoma, sans-serif;
-    }
-    body{
-      background-color: #f3edd5;
-    }
-    .header{
-      display: flex;
-      justify-content:space-around;
-      align-items: center;
-      height: 100px;
-      background-color: #dfd6ad;
-      color: #fff;
-      font-size: 2rem;
-      padding: 3rem;
-    }
-    .togbut{
-      background-color: grey;
-      color:#000;
-      border-radius: 1.5rem;
-      padding: 5px;
-      cursor: pointer;
-      height: 4.5rem;
-      width: 12rem;
-      font-size: 1.5rem;
-      color: #fff;
-      font-weight: 500;
-      border: rgba(97, 58, 32, 0.986) 3px solid;
-    }
-    .windiv{
-      font-size: 3rem;
-    }
-    .Winner{
-      background-color: #dfd6ad;
-      color: white;
-      font-size: 3rem;
-      padding: 1rem;
-      border: none;
-    }
-    .reset{
-      background-color: rgb(206, 164, 123);
-      border: black 3px solid;
-      color:#000;
-      border-radius: 1.5rem;
-      padding: 5px;
-      cursor: pointer;
-      height: 4.5rem;
-      width: 15rem;
-      font-size: 1.5rem;
-      font-weight: 500;
-      color: #fff;
-    }
-    .hero{
-      display: flex;
-      width:100vw;
-      align-items: center;
-      padding-top: 5%;
-    }
-    .container{
-      display: flex;
-      justify-content: center;
-      flex-wrap: wrap;
-      align-items: center;
-      height: 600px;
-      width: 600px;
-    }
-    .box{
-      display: flex;
-      width: 200px;
-      height: 200px;
-      border: 2px solid #000;
-      justify-content: center;
-      font-size: 10rem;
-      align-items: center;
-    }
-    .players{
-      width:600px;
-      height: 600px;
-      align-content: center;
-      padding-left: 10%;
-      font-size: 50px;
-    }
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+body{
+    background-color: #f3edd5;
+}
+.header{
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    height: 10vh;
+    width: 100vw;
+    background-color: #dfd6ad;
+    color: #fff;
+    font-size:large;
+    padding: 0.5rem 3rem;
+}
+.togbut{
+    background-color: grey;
+    color:#000;
+    border-radius: 1.5rem;
+    padding: 5px;
+    cursor: pointer;
+    height: 4.5rem;
+    width: 15vw;
+    font-size:medium;
+    color: #fff;
+    font-weight: 500;
+    border: rgba(97, 58, 32, 0.986) 3px solid;
+    
+}
+.windiv{
+    justify-self: center;
+    font-size: 3rem;
+    margin-top: 3vw ;
+    align-content: center;
+}
+.Winner{
+    background-color: #dfd6ad;
+    color: white;
+    font-size: 3rem;
+    padding: 1rem;
+    border: none;
+    
+}
+.reset{
+    background-color: rgb(206, 164, 123);
+    border: black 3px solid;
+    color:#000;
+    border-radius: 1.5rem;
+    padding: 5px;
+    cursor: pointer;
+    height: 4.5rem;
+    width: 30vw;
+    margin: 3vw;
+    margin-left: 34vw;
+    font-size:larger;
+    font-weight: 500;
+    color: #fff;
+    
+}
+.hero{
+    display: flex;
+    align-items: center;
+    padding-top: 5%;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    height: 30vw;
+    width: 30vw;
+}
+.box{
+    display: flex;
+    width: 10vw;
+    height: 10vw;
+    border: 2px solid #000;
+    justify-content: center;
+    font-size:xx-large;
+    align-items: center;
+
+}
+.players{
+    width:34vw;
+    height: 30vw;
+    align-content: center;
+    padding-left: 10%;
+    font-size:large;
+
+}
   </style>
 </head>
 <body>
-  <div class="header"> 
-    <h1>Tic Tac Toe</h1> 
-    <div class="windiv">Winner: <button class="Winner"></button></div>
-    <button class="reset">Reset Game</button>
-    <button class="togbut">Dark Mode</button>
-  </div>
-  <div class="hero">
+    <div class="header"> 
+        <h1>Tic Tac Toe</h1> 
+        
+        
+        <button class="togbut">Dark Mode</button>
+        
+    </div>
+    <div class="hero">
     <div class="players">Player O</div>
     <div class="container">
-      <button class="box" id="0"></button>
-      <button class="box" id="1"></button>
-      <button class="box" id="2"></button>
-      <button class="box" id="3"></button>
-      <button class="box" id="4"></button>
-      <button class="box" id="5"></button>
-      <button class="box" id="6"></button> 
-      <button class="box" id="7"></button>
-      <button class="box" id="8"></button>
+        <button class="box" id="0"></button>
+        <button class="box" id="1"></button>
+        <button class="box" id="2"></button>
+        <button class="box" id="3"></button>
+        <button class="box" id="4"></button>
+        <button class="box" id="5"></button>
+        <button class="box" id="6"></button> 
+        <button class="box" id="7"></button>
+        <button class="box" id="8"></button>
+        
     </div>
     <div class="players">Player X</div>
-  </div>
+    </div>
+    <div class="windiv">Winner: <button class="Winner">?</button></div>
+    <button class="reset">Reset Game</button>
 
   <script>
     let container = document.querySelector('.container');
